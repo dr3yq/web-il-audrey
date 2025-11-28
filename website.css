@@ -1,0 +1,414 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url(Poppins-Light.ttf) format(truetype);
+}
+
+body {
+    margin: 0;
+    font-family: "MyCuteFont";
+    background-image: url(WorldBackground.jpeg);
+    background-size: cover;
+}
+
+.header {
+    background-image: url(Banner\ IL\ WEB\ SDGS\ vss.png);
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+}
+
+.nav {
+    background-color: #ff5fca;
+    padding: 8px;
+    text-align: left;
+    font-family: 'Poppins',sans-serif;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: transform 0.2s, box-shadow 0.2s, background-color 0.2s;
+    font-family: 'Poppins',sans-serif;
+}
+
+.nav a:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 10px rgb(255, 0, 140);
+    opacity: 0.9;
+    background-color:  #ff00a6;
+    min-width: 160px;
+}
+
+.sdgs-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin: 20px auto;
+    padding-left: 20px;
+}
+
+.sdgs-image {
+    position: relative;
+    width: 500px;
+}
+
+.sdgs-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    transition: opacity 0.4s ease;
+    box-shadow: 0 0 6px rgba(255, 255, 255, 0.45);
+}
+
+.sdgs-image img:hover {
+    content: url(PoorPeopleVSS2.jpg);
+}
+
+.sdgs-image:hover .img1 {
+    opacity: 1;
+}
+
+.sdgs-image:hover .img2 {
+    opacity: 1;
+}
+
+.sdgs-text {
+    flex: 1;
+    background: linear-gradient(to right, rgba(0,0,0,0.8), rgba(0,0,0,0.3));
+    padding: 20px;
+    border-radius: 12px;
+    color: white;
+    font-family: 'Poppins',sans-serif;
+}
+
+.sdgs-text h2 {
+    margin-bottom: 10px;
+    font-size: 24px;
+    color: white;   
+    font-family: 'Poppins',sans-serif;
+    text-shadow: 0 0 6px rgba(0,0,0,0.45);
+}
+
+.sdgs-text p {
+    line-height: 1.6;
+    font-size: 18px;
+    color: white;
+    font-family: 'Poppins',sans-serif;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ff00a6;
+    min-width: 160px;
+    box-shadow: 0 4px 10px rgb(255, 0, 174);
+    border-radius: 8px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 10px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+}
+
+.dropdown-content a:hover {
+    background-color: #ff00c3;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown > a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 8px;
+    display: inline-block;
+    transition: transform 0.2s, box-shadow, 0.2s, background-color 0.2s;
+}
+
+.dropdown > a:hover {
+    background-color: #b0077d;
+    position: relative;
+}
+
+.sdgs-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.sdgs-card:hover {
+    transform: scale(1.05);
+}
+
+.sdgs-card img {
+    width: 100%;
+    display: block;
+    border-radius: 12px;
+    transition: opacity 0.4s ease;
+}
+
+.sdgs-card:hover img {
+    opacity: 0.2;
+}
+
+.sdgs-info {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    opacity: 0;
+    padding: 10px;
+    transition: opacity 0.4s ease;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.25;
+}
+
+.sdgs-card:hover .sdgs-info {
+    opacity: 1;
+}
+
+.sdgs-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* 6 kolom */
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.sdgs-subtitle {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.sdgs-extra {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 40px auto;
+}
+
+.extra-text {
+    flex: 1;
+    background: rgba(0,0,0,0.6);
+    padding: 25px;
+    border-radius: 15px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.extra-text h2 {
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+
+.extra-text p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.sdgs-kontribusi {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 20px auto 40px auto;
+}
+
+.kontribusi-text {
+    flex: 1;
+    background: linear-gradient(to right, rgba(0,0,0,0.8), rgba(0,0,0,0.3));
+    padding: 20px;
+    border-radius: 12px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.kontribusi-text h3 {
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+.kontribusi-text p {
+    line-height: 1.6;
+    font-size: 18px;
+    color: white;
+}
+
+.kontribusi-image {
+    position: relative;
+    flex: 1;
+    max-width: 480px;
+}
+
+.kontribusi-image img {
+    width: 100%;
+    border-radius: 12px;
+     filter: drop-shadow(0 0 6px rgba(255, 255, 255, 0.45));
+    transition: 0.25s ease-in-out;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.kontribusi-image img:hover {
+    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.65));
+}
+
+.kontribusi-image .img-default {
+    opacity: 1;
+    position: relative;
+}
+
+.kontribusi-image .img-hover {
+    opacity: 0;
+}
+
+.kontribusi-image:hover .img-default {
+    opacity: 0;
+}
+
+.kontribusi-image:hover .img-hover {
+    opacity: 1;
+}
+
+.sdg-extra {
+    text-align: center;
+    margin-top: 15px;
+    padding: 18px;
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    box-shadow: 0 0 15px rgba(200, 255, 255, 0.2);
+}
+
+.progress-container {
+    width: 90%;
+    height: 10px;
+    background: #ffffff30;
+    border-radius: 10px;
+    margin: 0 auto;
+    overflow: hidden;
+    backdrop-filter: blur(2px);
+}
+
+.progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #11c1ff, #84ffd9);
+    border-radius: 10px;
+    box-shadow: 0 0 10px #8ffcff, 0 0 20px #4fd2ff;
+}
+
+.percent-text {
+    font-size: 13px;
+    margin-top: 4px;
+    color: #dfffff;
+    opacity: 0.8;
+}
+
+* {
+    text-shadow: 
+        0 0 2px rgba(200, 248, 255, 0.6),
+        0 0 4px rgba(130, 228, 255, 0.5),
+        0 0 6px rgba(90, 167, 255, 0.4);
+}
+
+.sdgs-image.top-image {
+    position: relative;
+    width: 480px;   
+    height: 320px; 
+}
+
+.sdgs-image.top-image img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    transition: opacity 0.5s ease;
+}
+
+.sdgs-image.top-image .img-hover {
+    opacity: 0;
+}
+
+.sdgs-image.top-image:hover .img-hover {
+    opacity: 1;
+}
+
+.sdgs-image.top-image:hover .img-default {
+    opacity: 0;
+}
+
+.sdgs-image.top-image img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    transition: opacity 0.5s ease, box-shadow 0.4s ease;
+    box-shadow: 0 0 18px rgba(255, 255, 255, 0.55),
+                0 0 30px rgba(255, 220, 120, 0.35);
+}
+
+.sdgs-image.top-image:hover img {
+    box-shadow: 
+        0 0 22px rgba(255, 255, 255, 0.65),
+        0 0 40px rgba(255, 220, 120, 0.45),
+        0 0 55px rgba(255, 200, 80, 0.25);
+}
+
+/* GLOW DEFAULT UNTUK SEMUA IMAGE */
+img {
+    box-shadow: 
+        0 0 18px rgba(255, 255, 255, 0.55),
+        0 0 30px rgba(255, 220, 120, 0.35);
+    transition: 0.35s ease-in-out;
+    border-radius: 12px; /* kalau mau rounded */
+}
+
+/* GLOW SAAT HOVER */
+img:hover {
+    box-shadow: 
+        0 0 22px rgba(255, 255, 255, 0.65),
+        0 0 40px rgba(255, 220, 120, 0.45),
+        0 0 55px rgba(255, 200, 80, 0.25);
+}
+
